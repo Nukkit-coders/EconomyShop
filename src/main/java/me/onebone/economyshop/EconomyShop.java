@@ -194,12 +194,12 @@ public class EconomyShop extends PluginBase implements Listener{
 						side = Integer.parseInt(args[4]);
 					}catch(NumberFormatException e){
 						switch(args[4].toLowerCase()){
-						case "down": side = Vector3.SIDE_DOWN; break;
-						case "east": side = Vector3.SIDE_EAST; break;
-						case "north": side = Vector3.SIDE_NORTH; break;
-						case "south": side = Vector3.SIDE_SOUTH; break;
-						case "up": side = Vector3.SIDE_UP; break;
-						case "west": side = Vector3.SIDE_WEST; break;
+						case "down": side = 0; break;
+						case "east": side = 5; break;
+						case "north": side = 2; break;
+						case "south": side = 3; break;
+						case "up": side = 1; break;
+						case "west": side = 4; break;
 						case "shop": side = -1; break;
 						case "none": side = -2; break;
 						default:
